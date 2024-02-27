@@ -170,6 +170,7 @@ nav ul li a:hover {
 
 .between {
   justify-content: space-between;
+  gap: 32px;
 }
 
 .sec-3 {
