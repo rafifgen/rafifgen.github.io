@@ -1,11 +1,43 @@
+html {
+  height: 100%;
+}
+
+@keyframes colors {
+  0% {color: darkolivegreen;}
+  25% {color: olive;}
+  50% {color: darkgreen;}
+  75% {color: darkkhaki;}
+  100% {color: darkolivegreen;}
+}
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins";
   overflow-x: hidden;
 }
+
+footer {
+  height: 50px;
+  background-color:darkkhaki;
+}
+
+h1 {
+  font-size:48px;
+  color: darkslategrey;
+}
+
+h2 {
+  color: darkslategrey;
+}
+
+h3 {
+  color: darkolivegreen;
+}
+
 /*navbar*/
 nav {
   display: flex;
@@ -88,95 +120,124 @@ nav ul li a:hover {
     transition: .1s
   }
 
-  .image {
-   
-    width: 100%;
-    height: auto;  
-    max-width: 140px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}  
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
 
-    border: 2px solid blue;
-    padding: 8px;
-    border-radius: 5px;
-    margin: 0 auto;
-
-}
-main {
-    display: flex;
-    flex-direction: row;
+.image {   
+  width: 100%;
+  height: auto;  
+  max-width: 140px;
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 25%;
 }
 
-.box {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 32px;
+  margin: 10px 100px;
+  justify-content:space-around;
+  gap: 16px;
 }
-/* supaya ada jarak antar box  */
-.flexone{
-flex-grow: 1;
-}
-.flextwo{
-    flex-grow: 2;
-    }
-footer {
-    text-align: center;
-}
-h2 {
-  
-    text-align: center;
-    color: brown;
-    text-justify: inter-word;
-    word-wrap: break-word;
 
+.flextwo {
+  flex-grow: 2;
 }
-h5 {
+
+.flexone {
+  flex-grow: 1;
+}
+
+.main-bio {
+  background-color: bisque;
+}
+
+.sec-2 {
+  background-color: beige;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.sec-3 {
+  background-color: burlywood;
+}
+
+.sec-4 {
+  background-color: blanchedalmond;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.hero {
+  background-color: antiquewhite;
+  min-height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  animation-name: colors;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.half {
+  max-width: 50%;
+}
+
+.center {
   text-align: center;
-  color: red;
-  word-wrap: break-word;
- 
 }
-p {
-    text-align: justify;
-    text-justify: inter-word;
+
+.quote {
+  max-width: 33%;
 }
-@media screen and (max-width: 768px) {
-    nav ul{
-      width: 50%;
-    }
-  }
 
-  @media screen and (max-width: 576px) {
-   .menu-toggle{
-       display: flex;
-   }
-   main{
-       flex-direction: column-reverse;
-   }
-    nav ul{
-      position: absolute;
-      right:0;
-      top: 0;
-      width: 50%;
-      flex-direction: column;
-      height: 100vh;
-      justify-content:space-evenly;
-      align-items: center;
-      background-color: coral;
-      /* transform: translateX(100%);  */
-      transition: all 0.72s;
-      opacity: 0;
-      z-index: 2;
-    }
-    nav ul.menushow{
-        opacity: 0.5;
-        /* transform: translateX(0); */
-    }
-  }
+.bio-box {
+  display: flex;
+  flex-direction: row;
+  gap: 24px
+}
 
+.sub {
+  size: 24px;
+}
+
+.logo-img {
+  max-height: 100px;
+}
+
+.others {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+table, th, td {
+  border: 3px solid;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 4px;
+  padding-left: 8px;
+}
+table {
+  width: 100%;
+}

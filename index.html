@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek1 STr HTML 27 02 2024</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Srisakdi&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon-32x32.png"
+    type="image/x-icon">
 </head>
 
-<body>
-    <header>
-
+<body class="body">
+    <header class="header">
         <nav>
             <div class="logo">
-                <h4>Rizqi Proyek 1</h4>
+                <img src="img/Thank.png" alt="Rafif Genadratama" class="logo-img">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Assignment</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://github.com/kupip" target="_blank">GitHub</a></li>
+                <li><a href="#lesson-learnt">Lesson Learnt</a></li>
+                <li><a href="#bio">About</a></li>
             </ul>
             <div class="menu-toggle">
                 <input type="checkbox">
@@ -32,25 +31,170 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-    <main>
-        <div class="box flextwo">
-            <article>
-                <h2>Tentang Web</h2>
-                <p>Web Ini dibuat untuk memenuhi tugas Proyek 1. Beberapa sumber yang dipakai dalam pengerjaan tugas ini selain dari lms  adalah dari ... Terima Kasih</p>
-            </article>
-        </div>
-        <aside class="box flexone">
-            <img src="img/RIZQI.png" class="image"/>
-            <h5>Muhammad Rizqi Sholahuddin</h5>
-        </aside>
-    </main>
-    <footer class="box">
-        Rizqi, Di depan Laptop 27 Februari 2024
-    </footer>
+
+    <div class="hero flextwo" id="home">
+        <main class="main hero">
+            <h1 class="hero-text">Selamat Datang</h1>
+            <p>Halo. Saya adalah seorang mahasiswa sarjana terapan teknik informatika. Saat ini, saya sedang menempuh semester dua di Politeknik Negeri Bandung. Saya memiliki ketertarikan di bidang <i>data science</i> dan <i>back-end development</i>.</p>
+        </main>
     </div>
-</div>
+
+    <div class="main-bio flexone" id="bio">
+        <main class="main">
+            <div class="bio-box">
+                <aside class="box">
+                    <img src="img/Rafif.jpg" class="image"/>
+                </aside>
+                <div class="bio">
+                    <h2>Biodata</h2>
+                    <ul>
+                        <li class="list">Nama: Muhammad Rafif Genadratama</li>
+                        <li class="list">NIM: 231524016</li>
+                        <li class="list">Kelas: 1A-D4 Teknik Informatika</li>
+                        <li class="list">Hobi: Olahraga</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quote">
+                <h2 class="center">Motto</h2>
+                <p class="center">"Seorang terpelajar harus sudah berbuat adil sejak dalam <b>pikiran</b> apalagi dalam <b>perbuatan</b>."</p>
+                <p class="sub center"> — Pramoedya Ananta Toer</p>
+            </div>
+        </main>
+    </div>
+
+    <div class="sec-2 flexone" id="lesson-learnt">
+        <main class="main between">
+            <div class="bio half">
+                <h2>Kemampuan Teknis</h2>
+                <ul>
+                    <li class="list"><h3>C</h3><p>Saya mempelajari bahasa pemrograman C. Selain itu, saya memiliki sedikit pengalaman di bahasa ini yang dapat ditinjau dari pengerjaan tugas besar.</p></li>
+                    <li class="list"><h3>Microsoft Excel</h3><p>Saya menguasai beberapa fitur dan <i>basic functions</i> di Excel. Di antaranya terdapat <i>conditional formatting</i>, vlookup, filter, dan lain-lain.</p></li>
+                </ul>
+            </div>
+            <div class="bio half">
+                <h2><i>Lesson Learnt</i></h2>
+                <ul>
+                    <li class="list"><p>Saya mempelajari dasar-dasar HTML melalui tugas 4.2 ini.</p></li>
+                    <li class="list"><p>Saya mempelajari dasar-dasar HTML melalui tugas 4.2 ini.</p></li>
+                    <li class="list"><p>Saya mempelajari dasar-dasar HTML melalui tugas 4.2 ini.</p></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <div class="sec-3 flexone">
+        <main class="main around">
+            <div class="bio">
+                <h2>Harapan</h2>
+                <p>Setidaknya terdapat dua harapan besar saya saat berada di JTK. Berikut adalah harapan saya:</p>
+                <ol>
+                    <li class="list">Menguasai <i>soft skills</i> dan <i>hard skills</i> selepas lulus dari JTK.</li>
+                    <li class="list">Berkenalan dengan banyak orang, dari berbagai kalangan dan latar belakang. </li>
+                </ol>
+            </div>
+        </main>
+    </div>
+
+    <div class="sec-4 flexone">
+        <main class="main around">
+            <div>
+                <h2>Lain-lain</h2>
+                <div class="others">
+                    <div>
+                        <h3>Alamat Kampus</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1680160543165!2d107.56934107367114!3d-6.87046159312823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420a5e93f61%3A0xe356113d3d090726!2sDepartment%20of%20Computer%20Engineering%20and%20Informatics!5e0!3m2!1sen!2sid!4v1709047712014!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <h3>Sekilas Fakta</h3>
+                        <ul>
+                            <li class="list">Saya merupakan anak tunggal dari Ayah dan Ibu saya.</li>
+                            <li class="list">Nama bagus saya adalah Heroku 38. Berikut merupakan penugasan saya dalam mendapat nama bagus.</li>
+                            <iframe width="420" height="236.25" src="https://www.youtube.com/embed/3Mw3iVOBsx0?si=SD1SxlUUjq6W913d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="sec-2 flexone">
+        <main class="main around">
+            <div class="bio">
+                <h2>Mata Kuliah</h2>
+                <p>Barang kali anda berminat melihat mata kuliah saya dua semester terakhir, berikut adalah tabelnya:</p>
+                <table>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="7">1</td>
+                        <td>Konsep TIK</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Dasar-Dasar Pemrograman</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Bahasa Inggris</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan Pancasila</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Komputasi Kognitif</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Matematika Diskrit 1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Matematika Terapan A</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7">2</td>
+                        <td>Proyek 1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Struktur Data dan Algoritma</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Teknik Pemrograman</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan Agama</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan Kewarganegaraan</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Bahasa Inggris 2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Bahasa Indonesia</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer class="box">
+        <p class="center">Freshly baked at 22.55 PM, February 27<sup>th</sup> 2024.</p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
-
 </html>
