@@ -1,3 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/*navbar*/
+nav {
+  display: flex;
+  background-color: coral;
+  justify-content: space-around;
+  /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
+  /* atur padding dengan flex */
+  height: 45px;
+  align-items: center;
+  color: whitesmoke;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  transition: all 0.4s;
+}
+nav .logo {
+  font-family: "Srisakdi", cursive;
+  letter-spacing: 3px; /*space antar char*/
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+  color: teal;
+}
   /* hamburger menu */
   .menu-toggle{
     display: none; 
@@ -47,6 +89,106 @@
     opacity: 0;
     transition: .1s
   }
+
+.image {   
+    width: 100%;
+    height: auto;  
+    max-width: 140px;
+    display: block;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 25%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* supaya ada jarak antar box  */
+.flexone{
+flex-grow: 1;
+}
+.flextwo{
+    flex-grow: 2;
+    }
+footer {
+    text-align: center;
+}
+h2 {
+  
+    text-align: center;
+    color: brown;
+    text-justify: inter-word;
+    word-wrap: break-word;
+
+}
+h5 {
+  text-align: center;
+  color: red;
+  word-wrap: break-word;
+ 
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+@media screen and (max-width: 768px) {
+    nav ul{
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+   .menu-toggle{
+       display: flex;
+   }
+   main{
+       flex-direction: column-reverse;
+   }
+    nav ul{
+      position: absolute;
+      right:0;
+      top: 0;
+      width: 50%;
+      flex-direction: column;
+      height: 100vh;
+      justify-content:space-evenly;
+      align-items: center;
+      background-color: coral;
+      /* transform: translateX(100%);  */
+      transition: all 0.72s;
+      opacity: 0;
+      z-index: 2;
+    }
+    nav ul.menushow{
+        opacity: 0.5;
+        /* transform: translateX(0); */
+    }
+  }
+
+.list {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.row {
+  flex-direction: row;
+}
 
 
 html {
@@ -202,6 +344,7 @@ nav ul li a:hover {
   margin: 10px 100px;
   justify-content:space-around;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .flextwo {
@@ -280,6 +423,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   gap: 36px;
+  flex-wrap: wrap;
 }
 
 table, th, td {
