@@ -1,6 +1,7 @@
 import requests as rq
-from bs4 import BeautifulSoup
 import json
+import datetime
+from bs4 import BeautifulSoup
 
 
 def del_new_line(value):
@@ -9,7 +10,7 @@ def del_new_line(value):
 page = rq.get("https://www.republika.co.id/")
 aBSobj = BeautifulSoup(page.text, 'html.parser')
 
-file = open("\\json\\data.json", 'w')
+file = open(".\\json\\data.json", 'w')
 # print("Menampilkan objek html")
 # print("======================")
 # print(aBSobj)
@@ -42,7 +43,7 @@ for obj in aBSobj.find_all("div", class_="caption"):
         # print(temp_judul)
 
         # nulis ke json
-        data.append({"judul": temp_judul, "kategori": temp_kategori, "waktu": temp_date})
+        data.append({"judul": temp_judul, "kategori": temp_kategori, "waktu_publish": temp_date, "waktu_pengambilan": datetime.datetime.now().strftime("%a %d %b %Y, %H:%M")})
 jdumps = json.dumps(data)
 print(jdumps)
 file.writelines(jdumps)
