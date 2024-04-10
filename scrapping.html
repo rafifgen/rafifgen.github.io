@@ -9,9 +9,10 @@
 <body>
     <div id="headline_json"></div>
     <script>
-        $(function() {
+        $(document).ready(function() {
+            $(function() {
             
-            $.getJSON('file://data.json', function(obj) {
+            $.getJSON('data.json', function(obj) {
 
                 var str="<table border=1><thead>";
                     str += "<td>No</td>";
@@ -29,6 +30,7 @@
                 str += "</table>";
                 $('#headline_json').html(str);
             });
+        });
         });
     </script>
 </body>
