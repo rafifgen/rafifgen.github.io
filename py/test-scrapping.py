@@ -11,13 +11,6 @@ page = rq.get("https://www.republika.co.id/")
 aBSobj = BeautifulSoup(page.text, 'html.parser')
 
 file = open(".\\json\\data.json", 'w')
-# print("Menampilkan objek html")
-# print("======================")
-# print(aBSobj)
-
-# print("Menampilkan semua tag h2")
-# print("======================")
-# print(aBSobj.find_all("h2"))
 
 data = []
 temp = []
