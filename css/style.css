@@ -135,7 +135,6 @@ h2 {
     color: brown;
     text-justify: inter-word;
     word-wrap: break-word;
-
 }
 h5 {
   text-align: center;
@@ -357,4 +356,8 @@ td {
 
 div.headline_json {
   margin: 20px;
+}
+
+.scrap-heading {
+  margin-bottom: 12px;
 }

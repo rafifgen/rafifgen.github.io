@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Hasil Scrapping</title>
-    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
-</head>
-<body>
-    <div class="headline_json">
-        <h3>Tabel Hasil <i>Data Scrapping</i></h3>
-        <table id="table_scrapping">
-            <thead>
-                <td>No</td>
-                <td>Judul</td>
-                <td>Kategori</td>
-                <td>Waktu Publikasi</td>
-                <td>Waktu Pengambilan</td>
-            </thead>
-        </table>
-    </div>
-    <script>
-        $(document).ready(function() {
-            $(function() {
-                $.getJSON('./json/data.json', function(obj) {
-
-                    var str="";
-                    $.each(obj, function(n, data) {
-                        str += "<tr><td>" + (n+1) + "</td>";
-                        str += "<td>" + data.judul + "</td>";
-                        str += "<td>" + data.kategori + "</td>";
-                        str += "<td>" + data.waktu_publish + "</td>";
-                        str += "<td>" + data.waktu_pengambilan + "</td></tr>";
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Srisakdi&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+        <title>Hasil Scrapping</title>
+    </head>
+    <body>
+        <div class="headline_json">
+            <h2 class="scrap-heading">Tabel Hasil <i>Data Scrapping</i></h2>
+            <table id="table_scrapping">
+                <thead>
+                    <td>No</td>
+                    <td>Judul</td>
+                    <td>Kategori</td>
+                    <td>Waktu Publikasi</td>
+                    <td>Waktu Pengambilan</td>
+                </thead>
+            </table>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(function() {
+                    $.getJSON('./json/data.json', function(obj) {
+                        var str="";
+                        $.each(obj, function(n, data) {
+                            str += "<tr><td>" + (n+1) + "</td>";
+                            str += "<td>" + data.judul + "</td>";
+                            str += "<td>" + data.kategori + "</td>";
+                            str += "<td>" + data.waktu_publish + "</td>";
+                            str += "<td>" + data.waktu_pengambilan + "</td></tr>";
+                        });
+                        $('#table_scrapping').append(str);
                     });
-                    $('#table_scrapping').append(str);
                 });
             });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 </html>
