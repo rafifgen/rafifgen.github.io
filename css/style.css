@@ -275,11 +275,11 @@ h3 {
 }
 
 .main-bio {
-  background-color: bisque;
+  background-color: antiquewhite;
 }
 
 .sec-2 {
-  background-color: beige;
+  background-color: antiquewhite;
 }
 
 .between {
@@ -288,11 +288,11 @@ h3 {
 }
 
 .sec-3 {
-  background-color: burlywood;
+  background-color: antiquewhite;
 }
 
 .sec-4 {
-  background-color: blanchedalmond;
+  background-color: antiquewhite;
 }
 
 .around {
@@ -354,6 +354,7 @@ td {
   padding: 4px;
   padding-left: 8px;
 }
-table {
-  width: 100%;
+
+div.headline_json {
+  margin: 20px;
 }

@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hasil Scrapping</title>
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <div id="headline_json"></div>
+    <div class="headline_json">
+        <h3>Tabel Hasil <i>Data Scrapping</i></h3>
+        <table id="table_scrapping">
+            <thead>
+                <td>No</td>
+                <td>Judul</td>
+                <td>Kategori</td>
+                <td>Waktu Publikasi</td>
+                <td>Waktu Pengambilan</td>
+            </thead>
+        </table>
+    </div>
     <script>
         $(document).ready(function() {
             $(function() {
             
-            $.getJSON('data.json', function(obj) {
+            $.getJSON('./json/data.json', function(obj) {
 
-                var str="<table border=1><thead>";
-                    str += "<td>No</td>";
-                    str += "<td>Judul</td>";
-                    str += "<td>Kategori</td>";
-                    str += "<td>Waktu Publikasi</td>";
-                    str += "<td>Waktu Pengambilan</td></thead>";
+                var str="";
                 $.each(obj, function(n, data) {
                     str += "<tr><td>" + (n+1) + "</td>";
                     str += "<td>" + data.judul + "</td>";
@@ -27,8 +35,8 @@
                     str += "<td>" + data.waktu_publish + "</td>";
                     str += "<td>" + data.waktu_pengambilan + "</td></tr>";
                 });
-                str += "</table>";
-                $('#headline_json').html(str);
+                // str += "</table>";
+                $('#table_scrapping').append(str);
             });
         });
         });
