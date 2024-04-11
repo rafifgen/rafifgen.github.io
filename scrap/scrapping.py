@@ -10,7 +10,7 @@ def del_new_line(value):
 page = rq.get("https://www.republika.co.id/")
 aBSobj = BeautifulSoup(page.text, 'html.parser')
 
-file = open(".\\json\\data.json", 'w')
+file = open("data.json", 'w')
 
 data = []
 temp = []

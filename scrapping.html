@@ -25,7 +25,7 @@
         <script>
             $(document).ready(function() {
                 $(function() {
-                    $.getJSON('./json/data.json', function(obj) {
+                    $.getJSON('./scrap/data.json', function(obj) {
                         var str="";
                         $.each(obj, function(n, data) {
                             str += "<tr><td>" + (n+1) + "</td>";
