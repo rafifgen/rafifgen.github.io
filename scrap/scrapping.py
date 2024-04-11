@@ -3,14 +3,13 @@ import json
 import datetime
 from bs4 import BeautifulSoup
 
-
 def del_new_line(value):
     return ''.join(value.splitlines())
 
 page = rq.get("https://www.republika.co.id/")
 aBSobj = BeautifulSoup(page.text, 'html.parser')
 
-file = open("data.json", 'w')
+file = open("C:\\Users\\rafif\\OneDrive - Politeknik Negeri Bandung\\sem 2\\Semester 2\\Proyek 1\\Pertemuan 8\\Source Code\\kupip.github.io\\scrap\\data.json", 'w')
 
 data = []
 temp = []
@@ -28,14 +27,12 @@ for obj in aBSobj.find_all("div", class_="caption"):
         # ambil tanggal
         temp_date = temp_date[temp_date.find('- ')+2:]
         temp_date = temp_date.strip()
-        # print(temp_date)
         
         # ambil judul
         temp_judul = temp_judul.find("span")
         temp_judul = temp_judul.text
-        # print(temp_judul)
 
-        # nulis ke json
+        # nulis ke array json
         data.append({"judul": temp_judul, "kategori": temp_kategori, "waktu_publish": temp_date, "waktu_pengambilan": datetime.datetime.now().strftime("%a %d %b %Y, %H:%M")})
 jdumps = json.dumps(data)
 print(jdumps)
