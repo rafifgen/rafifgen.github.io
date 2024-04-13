@@ -3,16 +3,12 @@ import json
 import datetime
 from bs4 import BeautifulSoup
 
-def del_new_line(value):
-    return ''.join(value.splitlines())
-
 page = rq.get("https://www.republika.co.id/")
 aBSobj = BeautifulSoup(page.text, 'html.parser')
 
 file = open("C:\\Users\\rafif\\OneDrive - Politeknik Negeri Bandung\\sem 2\\Semester 2\\Proyek 1\\Pertemuan 8\\Source Code\\kupip.github.io\\scrap\\data.json", 'w')
 
 data = []
-temp = []
 arr_judul = []
 for obj in aBSobj.find_all("div", class_="caption"):
     temp_date = obj.find("div", class_='date')
