@@ -25,18 +25,18 @@
         </div>
         <script>
             $(function() {
-                    $.get('./scrap/data.json', function(obj) {
-                        var str="";
-                        $.each(obj, function(n, data) {
-                            str += "<tr><td>" + (n+1) + "</td>";
-                            str += "<td>" + data.judul + "</td>";
-                            str += "<td>" + data.kategori + "</td>";
-                            str += "<td>" + data.waktu_publish + "</td>";
-                            str += "<td>" + data.waktu_pengambilan + "</td></tr>";
-                        });
-                        $('#table_scrapping').append(str);
+                $.get('./scrap/data.json', function(obj) {
+                    var str="";
+                    $.each(obj, function(n, data) {
+                        str += "<tr><td>" + (n+1) + "</td>";
+                        str += "<td>" + data.judul + "</td>";
+                        str += "<td>" + data.kategori + "</td>";
+                        str += "<td>" + data.waktu_publish + "</td>";
+                        str += "<td>" + data.waktu_pengambilan + "</td></tr>";
                     });
+                    $('#table_scrapping').append(str);
                 });
+            });
         </script>
     </body>
 </html>

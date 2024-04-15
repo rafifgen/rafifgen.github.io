@@ -1,4 +1,3 @@
-import sys
 import datetime as dt
 import json
 import requests as rq
@@ -34,3 +33,4 @@ for obj in aBSobj.find_all("div", class_="caption"):
         data.append({"judul": judul, "kategori": kategori, "waktu_publish": date, "waktu_pengambilan": dt.datetime.now().strftime("%d %b %Y, %H:%M")})
 file.writelines(json.dumps(data))
 file.close()
+print(json.dumps(data))
