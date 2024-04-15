@@ -1,36 +1,36 @@
-import requests as rq
+import sys
+import datetime as dt
 import json
-import datetime
+import requests as rq
 from bs4 import BeautifulSoup
 
 page = rq.get("https://www.republika.co.id/")
 aBSobj = BeautifulSoup(page.text, 'html.parser')
-
 file = open("C:\\Users\\rafif\\OneDrive - Politeknik Negeri Bandung\\sem 2\\Semester 2\\Proyek 1\\Pertemuan 8\\Source Code\\kupip.github.io\\scrap\\data.json", 'w')
 
 data = []
-arr_judul = []
 for obj in aBSobj.find_all("div", class_="caption"):
-    temp_date = obj.find("div", class_='date')
+    temp_date_cat = obj.find("div", class_='date')
     temp_judul = obj.find("h3")
-    if temp_judul != None and temp_date != None:
-        temp_date = temp_date.text
+
+    # pengecekan apakah objek yang diambil ada isinya
+    if temp_judul != None and temp_date_cat != None:
+        # ambil judul
+        judul = temp_judul.find("span")
+        judul = judul.text
+
+        # mengambil teks yang berisi kategori dan waktu
+        temp_date_cat = temp_date_cat.text
         
         # ambil kategori
-        temp_kategori = temp_date[0:temp_date.find(' -')]
-        temp_kategori = temp_kategori.strip()
+        kategori = temp_date_cat[0:temp_date_cat.find(' -')]
+        kategori = kategori.strip()
         
         # ambil tanggal
-        temp_date = temp_date[temp_date.find('- ')+2:]
-        temp_date = temp_date.strip()
-        
-        # ambil judul
-        temp_judul = temp_judul.find("span")
-        temp_judul = temp_judul.text
+        date = temp_date_cat[temp_date_cat.find('- ')+2:]
+        date = date.strip()
 
-        # nulis ke array json
-        data.append({"judul": temp_judul, "kategori": temp_kategori, "waktu_publish": temp_date, "waktu_pengambilan": datetime.datetime.now().strftime("%a %d %b %Y, %H:%M")})
-jdumps = json.dumps(data)
-print(jdumps)
-file.writelines(jdumps)
+        # nulis ke array dictionary
+        data.append({"judul": judul, "kategori": kategori, "waktu_publish": date, "waktu_pengambilan": dt.datetime.now().strftime("%d %b %Y, %H:%M")})
+file.writelines(json.dumps(data))
 file.close()

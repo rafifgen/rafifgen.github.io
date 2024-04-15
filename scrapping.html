@@ -11,7 +11,8 @@
     </head>
     <body>
         <div class="headline_json">
-            <h2 class="scrap-heading">Tabel Hasil <i>Data Scrapping</i></h2>
+            <a href="index.html" class="link">Kembali</a>
+            <h2 class="scrap-heading">Tabel Hasil <i>Scrapping</i></h2>
             <table id="table_scrapping">
                 <thead>
                     <td>No</td>
@@ -23,9 +24,8 @@
             </table>
         </div>
         <script>
-            $(document).ready(function() {
-                $(function() {
-                    $.getJSON('./scrap/data.json', function(obj) {
+            $(function() {
+                    $.get('./scrap/data.json', function(obj) {
                         var str="";
                         $.each(obj, function(n, data) {
                             str += "<tr><td>" + (n+1) + "</td>";
@@ -37,7 +37,6 @@
                         $('#table_scrapping').append(str);
                     });
                 });
-            });
         </script>
     </body>
 </html>

@@ -361,3 +361,9 @@ div.headline_json {
 .scrap-heading {
   margin-bottom: 12px;
 }
+
+.link {
+  text-decoration: none;
+  color: darkolivegreen;
+  font-size: 1rem;
+}
