@@ -33,3 +33,4 @@ for obj in aBSobj.find_all("div", class_="caption"):
 jdumps = json.dumps(data)
 print(jdumps)
 file.writelines(jdumps)
+file.close()
