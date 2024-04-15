@@ -367,3 +367,7 @@ div.headline_json {
   color: darkolivegreen;
   font-size: 1rem;
 }
+
+.link:hover {
+  color: navy;
+}

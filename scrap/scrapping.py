@@ -30,7 +30,7 @@ for obj in aBSobj.find_all("div", class_="caption"):
         date = date.strip()
 
         # nulis ke array dictionary
-        data.append({"judul": judul, "kategori": kategori, "waktu_publish": date, "waktu_pengambilan": dt.datetime.now().strftime("%d %b %Y, %H:%M")})
+        data.append({"judul": judul, "kategori": kategori, "waktu_publish": date, "waktu_pengambilan": dt.datetime.now().strftime("%d %b %Y, %H.%M")})
 file.writelines(json.dumps(data))
 file.close()
 print(json.dumps(data))
