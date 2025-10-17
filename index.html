@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Statis | Rafif Genadratama</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.typekit.net/cxz4rrs.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
 </head>
@@ -32,71 +33,111 @@
         </nav>
     </header>
 
-    <div class="hero flextwo" id="home">
-        <main class="main hero">
-            <h1 class="hero-text">Selamat Datang</h1>
-            <p>Halo. Saya adalah seorang mahasiswa sarjana terapan teknik informatika. Saat ini, saya sedang menempuh semester dua di Politeknik Negeri Bandung. Saya memiliki ketertarikan di bidang <i>data science</i> dan <i>back-end development</i>.</p>
-        </main>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-text">Selamat Datang</h1>
+                <div class="card hero-card">
+                    <p>Halo. Saya adalah seorang mahasiswa sarjana terapan teknik informatika. Saat ini, saya sedang menempuh semester dua di Politeknik Negeri Bandung. Saya memiliki ketertarikan di bidang <i>data science</i> dan <i>back-end development</i>.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="main-bio flexone" id="bio">
-        <main class="main">
-            <div class="bio-box">
-                <aside class="box">
-                    <img src="img/Rafif.jpg" class="image"/>
-                </aside>
+    <!-- Bio Section -->
+    <div class="section" id="bio">
+        <div class="container">
+            <div class="bio-grid">
+                <div class="card">
+                    <div class="bio-image">
+                        <img src="img/Rafif.jpg" alt="Rafif Genadratama" class="image">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bio-content">
+                        <h2 class="section-title">Biodata</h2>
+                        <ul class="bio-list">
+                            <li>Nama: Muhammad Rafif Genadratama</li>
+                            <li>NIM: 231524016</li>
+                            <li>Kelas: 1A-D4 Teknik Informatika</li>
+                            <li>Hobi: Olahraga</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="bio-box">
-                <div class="bio">
-                    <h2>Biodata</h2>
-                    <ul>
-                        <li class="list">Nama: Muhammad Rafif Genadratama</li>
-                        <li class="list">NIM: 231524016</li>
-                        <li class="list">Kelas: 1A-D4 Teknik Informatika</li>
-                        <li class="list">Hobi: Olahraga</li>
+            <div class="card quote-card">
+                <h2 class="section-title center">Motto</h2>
+                <p class="quote-text">"Seorang terpelajar harus sudah berbuat adil sejak dalam <b>pikiran</b> apalagi dalam <b>perbuatan</b>."</p>
+                <p class="quote-author">— Pramoedya Ananta Toer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lesson Learnt Section -->
+    <div class="section" id="lesson-learnt">
+        <div class="container">
+            <div class="grid-two">
+                <div class="card">
+                    <h2 class="section-title">Kemampuan Teknis</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <h3>C</h3>
+                            <p>Saya mempelajari bahasa pemrograman C. Selain itu, saya memiliki sedikit pengalaman di bahasa ini yang dapat ditinjau dari pengerjaan tugas besar.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Microsoft Excel</h3>
+                            <p>Saya menguasai beberapa fitur dan <i>basic functions</i> di Excel. Di antaranya terdapat <i>conditional formatting</i>, vlookup, filter, dan lain-lain.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="section-title"><i>Lesson Learnt</i></h2>
+                    <ul class="lesson-list">
+                        <li>Saya mempelajari dasar-dasar HTML dan CSS melalui tugas 4.2 ini.</li>
+                        <li>Animasi merupakan hal baru bagi saya. Pada tugas kali ini, saya belajar menggunakan keyframe pada CSS. Ternyata, animasi sederhana seperti perubahan warna selamat datang dapat dicapai hanya dengan CSS.</li>
+                        <li>Pada tugas kali ini, saya belajar untuk menentukan skala prioritas saya. Misal, jika ingin menambahkan sesuatu, saya mempertimbangkan apakah waktu yang tersedia cukup untuk menambahkan hal tersebut.</li>
                     </ul>
                 </div>
             </div>
-            <div class="quote">
-                <h2 class="center">Motto</h2>
-                <p class="center">"Seorang terpelajar harus sudah berbuat adil sejak dalam <b>pikiran</b> apalagi dalam <b>perbuatan</b>."</p>
-                <p class="sub center"> — Pramoedya Ananta Toer</p>
-            </div>
-        </main>
+        </div>
     </div>
 
-    <div class="sec-2 flexone" id="lesson-learnt">
-        <main class="main between">
-            <div class="bio">
-                <h2>Kemampuan Teknis</h2>
-                <ul>
-                    <li class="list"><h3>C</h3><p>Saya mempelajari bahasa pemrograman C. Selain itu, saya memiliki sedikit pengalaman di bahasa ini yang dapat ditinjau dari pengerjaan tugas besar.</p></li>
-                    <li class="list"><h3>Microsoft Excel</h3><p>Saya menguasai beberapa fitur dan <i>basic functions</i> di Excel. Di antaranya terdapat <i>conditional formatting</i>, vlookup, filter, dan lain-lain.</p></li>
-                </ul>
-            </div>
-            <div class="bio">
-                <h2><i>Lesson Learnt</i></h2>
-                <ul>
-                    <li class="list"><p>Saya mempelajari dasar-dasar HTML dan CSS melalui tugas 4.2 ini.</p></li>
-                    <li class="list"><p>Animasi merupakan hal baru bagi saya. Pada tugas kali ini, saya belajar menggunakan keyframe pada CSS. Ternyata, animasi sederhana seperti perubahan warna selamat datang dapat dicapai hanya dengan CSS.</p></li>
-                    <li class="list"><p>Pada tugas kali ini, saya belajar untuk menentukan skala prioritas saya. Misal, jika ingin menambahkan sesuatu, saya mempertimbangkan apakah waktu yang tersedia cukup untuk menambahkan hal tersebut.</p></li>
-                </ul>
-            </div>
-        </main>
-    </div>
-
-    <div class="sec-3 flexone">
-        <main class="main around">
-            <div class="bio">
-                <h2>Harapan</h2>
+    <!-- Hopes Section -->
+    <div class="section">
+        <div class="container">
+            <div class="card">
+                <h2 class="section-title">Harapan</h2>
                 <p>Setidaknya terdapat dua harapan besar saya saat berada di JTK. Berikut adalah harapan saya:</p>
-                <ol>
-                    <li class="list">Menguasai <i>soft skills</i> dan <i>hard skills</i> selepas lulus dari JTK.</li>
-                    <li class="list">Berkenalan dengan banyak orang, dari berbagai kalangan dan latar belakang. </li>
+                <ol class="hopes-list">
+                    <li>Menguasai <i>soft skills</i> dan <i>hard skills</i> selepas lulus dari JTK.</li>
+                    <li>Berkenalan dengan banyak orang, dari berbagai kalangan dan latar belakang.</li>
                 </ol>
             </div>
-        </main>
+        </div>
     </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 
     <div class="sec-4 flexone">
         <main class="main around">
