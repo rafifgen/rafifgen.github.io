@@ -18,8 +18,8 @@ params:
     Title: Hi, there!
     Content:
       I'm Rafif, a junior majoring in Informatics in Politeknik Negeri Bandung.
-      Currently, I'm interested in data-related and low level programming (they're two
-      of the least saturated sub-fields in CS, aren't they?).
+      Currently, I'm interested in data-related and low level programming because, apparently,
+      they're less saturated than others.
   socialIcons:
     - name: "Email"
       url: "mailto:rafifgenadratama28@gmail.com"
