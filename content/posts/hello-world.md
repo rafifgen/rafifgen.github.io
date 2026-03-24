@@ -4,4 +4,4 @@ draft: true
 title: Hello World
 ---
 # Title
-Hello, world!
+Hello, world! This is the first post of me attempting to use Hugo.
