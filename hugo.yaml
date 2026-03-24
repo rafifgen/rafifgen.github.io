@@ -1,4 +1,7 @@
 baseURL: "https://example.org/"
+caches:
+  images:
+    dir: :cacheDir/images
 locale: "id-ID"
 menus:
   main:
@@ -29,4 +32,5 @@ params:
       url: "https://github.com/rafifgen"
     - name: "Letterboxd"
       url: "https://letterboxd.com/kupip"
-  mainSections: []
+  mainSections:
+    - projects
