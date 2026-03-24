@@ -13,14 +13,18 @@
       <link>http://localhost:1313/experience/</link>
       <pubDate>Tue, 24 Mar 2026 18:52:59 +0700</pubDate>
       <guid>http://localhost:1313/experience/</guid>
-      <description></description>
+      <description>&lt;h3 id=&#34;research-assistant-for-miss-distance-indicator-oct--dec-2025&#34;&gt;Research Assistant for Miss Distance Indicator (Oct &amp;mdash; Dec 2025)&lt;/h3&gt;
+&lt;p&gt;WIP.&lt;/p&gt;
+&lt;h3 id=&#34;research-assistant-for-fault-seeding-approach-for-testing-marking-apr--aug-2025&#34;&gt;Research Assistant for Fault Seeding Approach for Testing Marking (Apr &amp;mdash; Aug 2025)&lt;/h3&gt;
+&lt;p&gt;WIP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World</title>
       <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Tue, 24 Mar 2026 14:51:29 +0700</pubDate>
       <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;title&#34;&gt;Title&lt;/h1&gt;
+&lt;p&gt;Hello, world!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
