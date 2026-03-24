@@ -4,3 +4,7 @@ title: "Rafif Genadratama"
 theme: "PaperMod"
 params:
   defaultTheme: auto
+  disableThemeToggle: true
+  homeInfoParams:
+    Title: Hi!
+    Content: Can be info, link, etc.

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Hello World | Rafif Genadratama</title>
+<title>Experience | Rafif Genadratama</title>
 <meta name="keywords" content="">
-<meta name="description" content="Hello World - Rafif Genadratama">
+<meta name="description" content="Experience - Rafif Genadratama">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/hello-world/">
+<link rel="canonical" href="http://localhost:1313/experience/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/hello-world/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/experience/">
 <noscript>
     <style>
         #theme-toggle,
@@ -66,7 +66,31 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><script>
+	
+	function syncTheme() {
+		
+		if (!localStorage.getItem("pref-theme")) {
+			if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+				document.querySelector("html").dataset.theme = "dark";
+			} else {
+				document.querySelector("html").dataset.theme = "light";
+			}
+		}
+	}
+
+	
+	window
+		.matchMedia("(prefers-color-scheme: dark)")
+		.addEventListener("change", syncTheme);
+
+	
+	
+	window.matchMedia("(prefers-color-scheme: dark)").addListener(function (e) {
+		syncTheme();
+	});
 </script>
+
 </head>
 <body id="top">
     <header class="header">
@@ -86,7 +110,7 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Hello World
+      Experience
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -94,7 +118,7 @@
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2026-03-24 14:51:29 +0700 +07'>March 24, 2026</span>
+    <div class="post-meta"><span title='2026-03-24 18:52:59 +0700 +07'>March 24, 2026</span>
 
 </div>
   </header> 
