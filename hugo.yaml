@@ -1,0 +1,6 @@
+baseURL: "https://example.org/"
+locale: "id-ID"
+title: "Rafif Genadratama"
+theme: "PaperMod"
+params:
+  defaultTheme: auto
