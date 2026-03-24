@@ -1,6 +1,6 @@
 ---
 date: '2026-03-24T18:52:59+07:00'
-draft: true
+draft: false
 title: Experience
 ---
 ### Research Assistant for Miss Distance Indicator (Oct --- Dec 2025)
