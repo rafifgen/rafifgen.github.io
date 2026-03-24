@@ -2,21 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rafif Genadratama</title>
-    <link>https://rafifgen.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Rafif Genadratama</description>
     <generator>Hugo</generator>
     <language>id-ID</language>
-    <lastBuildDate>Tue, 24 Mar 2026 18:52:59 +0700</lastBuildDate>
-    <atom:link href="https://rafifgen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2026 20:32:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tic Tac Toe</title>
+      <link>http://localhost:1313/projects/tic-tac-toe/</link>
+      <pubDate>Tue, 24 Mar 2026 20:32:17 +0700</pubDate>
+      <guid>http://localhost:1313/projects/tic-tac-toe/</guid>
+      <description>The first full-fledged program I made</description>
+    </item>
     <item>
       <title>Experience</title>
-      <link>https://rafifgen.github.io/experience/</link>
+      <link>http://localhost:1313/experience/</link>
       <pubDate>Tue, 24 Mar 2026 18:52:59 +0700</pubDate>
-      <guid>https://rafifgen.github.io/experience/</guid>
+      <guid>http://localhost:1313/experience/</guid>
       <description>&lt;h3 id=&#34;research-assistant-for-miss-distance-indicator-oct--dec-2025&#34;&gt;Research Assistant for Miss Distance Indicator (Oct &amp;mdash; Dec 2025)&lt;/h3&gt;
+&lt;h4 id=&#34;politeknik-negeri-bandung&#34;&gt;Politeknik Negeri Bandung&lt;/h4&gt;
 &lt;p&gt;WIP.&lt;/p&gt;
 &lt;h3 id=&#34;research-assistant-for-fault-seeding-approach-for-testing-marking-apr--aug-2025&#34;&gt;Research Assistant for Fault Seeding Approach for Testing Marking (Apr &amp;mdash; Aug 2025)&lt;/h3&gt;
+&lt;h4 id=&#34;politeknik-negeri-bandung-1&#34;&gt;Politeknik Negeri Bandung&lt;/h4&gt;
 &lt;p&gt;WIP.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Tue, 24 Mar 2026 14:51:29 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>Hola!</description>
     </item>
   </channel>
 </rss>

@@ -89,6 +89,20 @@
 	window.matchMedia("(prefers-color-scheme: dark)").addListener(function (e) {
 		syncTheme();
 	});
+	const faviconTag = document.querySelector('link[rel="icon"]');
+	const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+	function changeFavicon() {
+		if (isDark.matches) {
+			faviconTag.href = "/favicon-dark.ico";
+		} else {
+			faviconTag.href = "/favicon-light.ico";
+		}
+	}
+
+	
+	changeFavicon();
+	isDark.addEventListener("change", changeFavicon);
 </script>
 
 </head>
@@ -107,8 +121,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/experience/" title="Experience">
-                    <span>Experience</span>
+                <a href="http://localhost:1313/resume-rafif-genadratama.pdf" title="Resume">
+                    <span>Resume</span>
                 </a>
             </li>
         </ul>

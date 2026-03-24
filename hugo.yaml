@@ -8,9 +8,13 @@ menus:
     - name: Home
       pageRef: /
       weight: 10
-    - name: Experience
-      pageRef: experience/
-      weight: 20
+    # still wondering whether to include this
+    # - name: Experience
+    #   pageRef: experience/
+    #   weight: 20
+    - name: Resume
+      url: /resume-rafif-genadratama.pdf
+      weight: 30
 title: "Rafif Genadratama"
 theme: "PaperMod"
 params:

@@ -21,4 +21,18 @@
 	window.matchMedia("(prefers-color-scheme: dark)").addListener(function (e) {
 		syncTheme();
 	});
+	const faviconTag = document.querySelector('link[rel="icon"]');
+	const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+	function changeFavicon() {
+		if (isDark.matches) {
+			faviconTag.href = "/favicon-dark.ico";
+		} else {
+			faviconTag.href = "/favicon-light.ico";
+		}
+	}
+
+	// Run it initially and listen for theme changes
+	changeFavicon();
+	isDark.addEventListener("change", changeFavicon);
 </script>
