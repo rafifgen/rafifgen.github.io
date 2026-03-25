@@ -6,14 +6,21 @@
     <description>Recent content in Projects on Rafif Genadratama</description>
     <generator>Hugo</generator>
     <language>id-ID</language>
-    <lastBuildDate>Tue, 24 Mar 2026 20:32:17 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 06:58:24 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tic Tac Toe</title>
-      <link>http://localhost:1313/projects/tic-tac-toe/</link>
-      <pubDate>Tue, 24 Mar 2026 20:32:17 +0700</pubDate>
-      <guid>http://localhost:1313/projects/tic-tac-toe/</guid>
-      <description>The first full-fledged program I made</description>
+      <title>Cashflow Template</title>
+      <link>http://localhost:1313/projects/cashflow-template/</link>
+      <pubDate>Wed, 25 Mar 2026 06:58:24 +0700</pubDate>
+      <guid>http://localhost:1313/projects/cashflow-template/</guid>
+      <description>&lt;p&gt;TL;DR: here&amp;rsquo;s the &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1J2R384GSFyt4PZ8fETerrzRpyW6wUISCo3m-uBc913E/edit?usp=drivesdk&#34;&gt;link&lt;/a&gt;, dude.
+{{ $path := &amp;ldquo;cashflow.png&amp;rdquo; }}
+{{ with .Resources.Get $path }}
+&lt;!-- raw HTML omitted --&gt;
+{{ else }}
+{{ errorf &amp;ldquo;Unable to get page resource %q&amp;rdquo; $path }}
+{{ end }}
+Initially, I used &lt;a href=&#34;https://zotiger.com&#34;&gt;Money+ by zotiger studios&lt;/a&gt; for my cashflow tracking. But, because I want cloud sync across my devices (and absolutely I couldn&amp;rsquo;t afford to buy the premium Money+ yet), I thought of using Google Spreadsheet. I tried looking for a template. Then, I got one from Home Sweet Loan (2024) film. The main character uses a Google Spreadsheet to track her finance. But, I found it quite excessive than what I needed then. It looked like it was made to track a person&amp;rsquo;s whole networth rather than day to day cashflow. Hence, I made this template for my cashflow tracking.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

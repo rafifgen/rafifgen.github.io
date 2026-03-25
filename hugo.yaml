@@ -14,7 +14,10 @@ menus:
     #   weight: 20
     - name: Resume
       url: /resume-rafif-genadratama.pdf
-      weight: 30
+      # weight: 30
+    - name: Projects
+      pageRef: projects/
+      # weight: 40
 title: "Rafif Genadratama"
 theme: "PaperMod"
 params:
@@ -36,5 +39,4 @@ params:
       url: "https://github.com/rafifgen"
     - name: "Letterboxd"
       url: "https://letterboxd.com/kupip"
-  mainSections:
-    - projects
+  mainSections: []
