@@ -3,6 +3,7 @@ date: '2026-03-25T06:58:24+07:00'
 draft: false
 title: 'Cashflow Template'
 ---
+![Spreadsheets](cashflow.png)
 TL;DR: here's the [link](https://docs.google.com/spreadsheets/d/1J2R384GSFyt4PZ8fETerrzRpyW6wUISCo3m-uBc913E/edit?usp=drivesdk), dude.
   
 Initially, I used [Money+ by zotiger studios](https://zotiger.com) for my cashflow tracking. But, because I want cloud sync across my devices (and absolutely I couldn't afford to buy the premium Money+ yet), I thought of using Google Spreadsheet. I tried looking for a template. Then, I got one from Home Sweet Loan (2024) film. The main character uses a Google Spreadsheet to track her finance. But, I found it quite excessive than what I needed then. It looked like it was made to track a person's whole networth rather than day to day cashflow. Hence, I made this template for my cashflow tracking.
@@ -14,4 +15,4 @@ So,here it is:
 
 And, by the way, I tried vibe coding a money management app in Flutter. But, the SQLite file in Google Drive occupied more space than a couple of Google Spreadsheet files size combined — even though the spreadsheet file obviously got bigger once downloaded as Excel. So, yeah, it's just not worth doing I think and I just continued using the spreadsheet.
 
-Edit (16/04/2026): I'm using Cashew right now.
+Edit (16/04/2026): I'm using [Cashew](https://github.com/jameskokoska/Cashew) right now.
