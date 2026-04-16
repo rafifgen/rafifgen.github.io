@@ -6,8 +6,32 @@
     <description>Recent content on Rafif Genadratama</description>
     <generator>Hugo</generator>
     <language>id-ID</language>
-    <lastBuildDate>Wed, 25 Mar 2026 06:58:24 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 11:29:51 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Water Level</title>
+      <link>http://localhost:1313/projects/water-level/</link>
+      <pubDate>Thu, 16 Apr 2026 11:29:51 +0700</pubDate>
+      <guid>http://localhost:1313/projects/water-level/</guid>
+      <description>&lt;p&gt;WIP.&lt;/p&gt;
+&lt;p&gt;logging:&lt;/p&gt;
+&lt;h3 id=&#34;15042026&#34;&gt;15/04/2026&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I decided to use the code from &lt;a href=&#34;https://www.cytron.io/tutorial/esp32-water-tank-monitoring&#34;&gt;Azfar Rosdi&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I learnt that &lt;code&gt;pulseIn(pin, state)&lt;/code&gt; is used to calculate
+how long certain &lt;code&gt;pin&lt;/code&gt; go from &lt;code&gt;!state&lt;/code&gt; to &lt;code&gt;state&lt;/code&gt;.
+It returns the time spent in microseconds.&lt;/li&gt;
+&lt;li&gt;Now why did the water level indicator not work on my waffer jar?&lt;/li&gt;
+&lt;li&gt;I read from &lt;a href=&#34;https://handsontec.com/dataspecs/sensor/SR-04-Ultrasonic.pdf&#34;&gt;HandsOn Tech User Guide&lt;/a&gt; that the surface must have a minimum area of 0.5m&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;. Maybe that&amp;rsquo;s why, need to confirm it anyway.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;04012026&#34;&gt;04/01/2026&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I learnt about SPIFFS (SPI Flash Filesystem). It&amp;rsquo;s a file system used for SPI NOR flash device; a memory commonly used for embedded devices &lt;a href=&#34;https://www.gigadevice.com/product/flash/spi-nor-flash&#34;&gt;GigaDevice&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I learnt that SPIFFS is mounted at /spiffs.&lt;/li&gt;
+&lt;li&gt;I learnt that SPIFFS store files in a flat structure. So, for example, if I store a file like /spiffs/dir/file1.txt, this file has a name &amp;ldquo;/dir/file1.txt&amp;rdquo; instead a file1.txt in a /dir/ directory &lt;a href=&#34;https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/storage/spiffs.html&#34;&gt;SPIFFS&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Cashflow Template</title>
       <link>http://localhost:1313/projects/cashflow-template/</link>

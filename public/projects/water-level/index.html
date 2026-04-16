@@ -5,11 +5,28 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Projects | Rafif Genadratama</title>
+<title>Water Level | Rafif Genadratama</title>
 <meta name="keywords" content="">
-<meta name="description" content="Some projects I&rsquo;d like to share">
+<meta name="description" content="WIP.
+logging:
+15/04/2026
+
+I decided to use the code from Azfar Rosdi.
+I learnt that pulseIn(pin, state) is used to calculate
+how long certain pin go from !state to state.
+It returns the time spent in microseconds.
+Now why did the water level indicator not work on my waffer jar?
+I read from HandsOn Tech User Guide that the surface must have a minimum area of 0.5m2. Maybe that&rsquo;s why, need to confirm it anyway.
+
+
+04/01/2026
+
+I learnt about SPIFFS (SPI Flash Filesystem). It&rsquo;s a file system used for SPI NOR flash device; a memory commonly used for embedded devices GigaDevice.
+I learnt that SPIFFS is mounted at /spiffs.
+I learnt that SPIFFS store files in a flat structure. So, for example, if I store a file like /spiffs/dir/file1.txt, this file has a name &ldquo;/dir/file1.txt&rdquo; instead a file1.txt in a /dir/ directory SPIFFS.
+">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/projects/">
+<link rel="canonical" href="http://localhost:1313/projects/water-level/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +35,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/projects/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/water-level/">
 <noscript>
     <style>
         #theme-toggle,
@@ -107,7 +123,7 @@
 </script>
 
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -123,7 +139,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/projects/" title="Projects">
-                    <span class="active">Projects</span>
+                    <span>Projects</span>
                 </a>
             </li>
             <li>
@@ -134,44 +150,44 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Projects
-  </h1>
-</header>
-<div class="post-content"><p>Some projects I&rsquo;d like to share</p>
+<main class="main">
 
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Water Level
+    </h1>
+    <div class="post-meta"><span title='2026-04-16 11:29:51 +0700 +07'>April 16, 2026</span>
 
 </div>
+  </header> 
+  <div class="post-content"><p>WIP.</p>
+<p>logging:</p>
+<h3 id="15042026">15/04/2026<a hidden class="anchor" aria-hidden="true" href="#15042026">#</a></h3>
+<ul>
+<li>I decided to use the code from <a href="https://www.cytron.io/tutorial/esp32-water-tank-monitoring">Azfar Rosdi</a>.</li>
+<li>I learnt that <code>pulseIn(pin, state)</code> is used to calculate
+how long certain <code>pin</code> go from <code>!state</code> to <code>state</code>.
+It returns the time spent in microseconds.</li>
+<li>Now why did the water level indicator not work on my waffer jar?</li>
+<li>I read from <a href="https://handsontec.com/dataspecs/sensor/SR-04-Ultrasonic.pdf">HandsOn Tech User Guide</a> that the surface must have a minimum area of 0.5m<!-- raw HTML omitted -->2<!-- raw HTML omitted -->. Maybe that&rsquo;s why, need to confirm it anyway.</li>
+</ul>
+<hr>
+<h3 id="04012026">04/01/2026<a hidden class="anchor" aria-hidden="true" href="#04012026">#</a></h3>
+<ul>
+<li>I learnt about SPIFFS (SPI Flash Filesystem). It&rsquo;s a file system used for SPI NOR flash device; a memory commonly used for embedded devices <a href="https://www.gigadevice.com/product/flash/spi-nor-flash">GigaDevice</a>.</li>
+<li>I learnt that SPIFFS is mounted at /spiffs.</li>
+<li>I learnt that SPIFFS store files in a flat structure. So, for example, if I store a file like /spiffs/dir/file1.txt, this file has a name &ldquo;/dir/file1.txt&rdquo; instead a file1.txt in a /dir/ directory <a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/storage/spiffs.html">SPIFFS</a>.</li>
+</ul>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Water Level
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>WIP.
-logging:
-15/04/2026 I decided to use the code from Azfar Rosdi. I learnt that pulseIn(pin, state) is used to calculate how long certain pin go from !state to state. It returns the time spent in microseconds. Now why did the water level indicator not work on my waffer jar? I read from HandsOn Tech User Guide that the surface must have a minimum area of 0.5m2. Maybe that’s why, need to confirm it anyway. 04/01/2026 I learnt about SPIFFS (SPI Flash Filesystem). It’s a file system used for SPI NOR flash device; a memory commonly used for embedded devices GigaDevice. I learnt that SPIFFS is mounted at /spiffs. I learnt that SPIFFS store files in a flat structure. So, for example, if I store a file like /spiffs/dir/file1.txt, this file has a name “/dir/file1.txt” instead a file1.txt in a /dir/ directory SPIFFS. </p>
-  </div>
-  <footer class="entry-footer"><span title='2026-04-16 11:29:51 +0700 +07'>April 16, 2026</span></footer>
-  <a class="entry-link" aria-label="post link to Water Level" href="http://localhost:1313/projects/water-level/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Cashflow Template
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>
-TL;DR: here’s the link, dude.
-Initially, I used Money&#43; by zotiger studios for my cashflow tracking. But, because I want cloud sync across my devices (and absolutely I couldn’t afford to buy the premium Money&#43; yet), I thought of using Google Spreadsheet. I tried looking for a template. Then, I got one from Home Sweet Loan (2024) film. The main character uses a Google Spreadsheet to track her finance. But, I found it quite excessive than what I needed then. It looked like it was made to track a person’s whole networth rather than day to day cashflow. Hence, I made this template for my cashflow tracking.
-...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-25 06:58:24 +0700 +07'>March 25, 2026</span></footer>
-  <a class="entry-link" aria-label="post link to Cashflow Template" href="http://localhost:1313/projects/cashflow-template/"></a>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
 </article>
     </main>
     
